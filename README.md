@@ -31,6 +31,9 @@ conda env create -f environment.yml
 
 The `adopt-py` package itself can then be installed with:
 
+
+> For package development you also need to install [requirements-dev.txt](./requirements-dev.txt) with `pip install -r requirements-dev.txt`.
+
 ## Packaged Components
 
 ### Solvers
