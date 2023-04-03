@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "adopt-py"
+version = "0.1.0"
+description = "AI-driven design and optimization for scientific simulators."
+authors = ["Ludger Paehler <ludger.paehler@tum.de>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "adopt_py"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jax = "^0.4.8"
+ray = "^2.3.1"
+jaxfluids = {git = "https://github.com/adopt-opt/jaxfluids.git"}
+google-vizier = "^0.1.4"
+
+[tool.poetry.group.dev.dependencies]
+black = "23.3.0"
+pytest = "7.2.2"
+coverage = "7.2.2"
+pytest-cov = "4.0.0"
+pre-commit = "^3.2.1"
+ruff = "^0.0.260"
+
+[tool.ruff] 
+line-length = 100
+ignore = ["D203"]
+show-source = true
+
+[tool.black] 
+line-length = 100 
+target-version = ['py310']
+force-exclude = '''
+    vizier/
+    jaxfluids/
+'''
+
+[tool.pytest.ini_options] 
+addopts = "-ra --cov"
+testpaths = ["tests"] 
+pythonpath = ['.']
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
