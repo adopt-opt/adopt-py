@@ -1,0 +1,6 @@
+[submodule "jaxfluids"]
+	path = jaxfluids
+	url = https://github.com/adopt-opt/jaxfluids
+[submodule "vizier"]
+	path = vizier
+	url = https://github.com/google/vizier.git
