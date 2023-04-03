@@ -1,8 +1,4 @@
-<div align="center">
-  🤖🌊🚀
-</div>
-
-# AI-Driven Design and Optimization (ADOPT)
+# 🤖🌊🚀 AI-Driven Design and Optimization (ADOPT)
 
 ## About
 
