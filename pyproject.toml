@@ -22,6 +22,24 @@ pytest-cov = "4.0.0"
 pre-commit = "^3.2.1"
 ruff = "^0.0.260"
 
+[tool.ruff] 
+line-length = 100
+ignore = ["D203"]
+show-source = true
+
+[tool.black] 
+line-length = 100 
+target-version = ['py310']
+force-exclude = '''
+    vizier/
+    jaxfluids/
+'''
+
+[tool.pytest.ini_options] 
+addopts = "-ra --cov"
+testpaths = ["tests"] 
+pythonpath = ['.']
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
