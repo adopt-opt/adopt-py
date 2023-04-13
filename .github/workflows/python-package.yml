@@ -1,6 +1,6 @@
 name: Package Build
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build-linux:
@@ -18,6 +18,6 @@ jobs:
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
         echo $CONDA/bin >> $GITHUB_PATH
-    - name: Install dependencies
+    - name: Test Install
       run: |
         pip install .
