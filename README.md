@@ -37,6 +37,10 @@ pip install .
 
 > For package development you also need to install [requirements-dev.txt](./requirements-dev.txt) with `pip install -r requirements-dev.txt`.
 
+## Contributing
+
+The workflow to contribute code to the package is described in minute detail in [Contributing](./CONTRIBUTING.md).
+
 ## Packaged Components
 
 ### Solvers
