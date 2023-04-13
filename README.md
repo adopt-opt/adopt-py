@@ -45,4 +45,6 @@ The workflow to contribute code to the package is described in minute detail in 
 
 ### Solvers
 
-### Design ptimization Algorithms
+* [jaxfluids](https://github.com/tumaer/jaxfluids): compressible fluid dynamics in [JAX](https://github.com/google/jax)
+
+### Design Optimization Algorithms
