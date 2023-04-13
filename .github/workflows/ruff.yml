@@ -11,4 +11,3 @@ jobs:
       - uses: chartboost/ruff-action@v1
         with:
           version: 0.0.259
-          src: './adopt_py, ./tests'
