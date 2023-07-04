@@ -21,6 +21,7 @@ coverage = "7.2.2"
 pytest-cov = "4.0.0"
 pre-commit = "^3.2.1"
 ruff = "^0.0.260"
+pyre-check = "^0.9.18"
 
 [tool.ruff]
 line-length = 100
